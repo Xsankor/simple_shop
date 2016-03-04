@@ -1,0 +1,11 @@
+h2 Товары
+@product.each do |product|
+ =link_to "#{product.name} #{product.quantity}", product_url(product)
+
+
+
+  p= product.description
+  p= product.quantity
+  p= product.price
+
+
